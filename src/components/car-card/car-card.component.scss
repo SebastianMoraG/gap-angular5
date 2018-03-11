@@ -1,0 +1,28 @@
+:host{
+    .container-card{
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        .image{
+            width: 100%;
+            flex-grow: 1;
+            img{
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .info-car{
+            padding: 2rem 2rem;
+            .item{
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

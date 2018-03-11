@@ -1,0 +1,49 @@
+:host{
+    padding: 2% 4%;
+    display: block;
+    .back{
+        cursor: pointer;
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+    .container-card{
+        display: flex;
+        flex-wrap: wrap;
+        .image{
+            width: 70%;
+            overflow: hidden;
+            margin-right: 2rem;
+            flex-grow: 1;
+            min-width: 50rem;
+            max-width: 80rem;;
+            margin-bottom: 2rem;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .info-car{
+            min-width: 2rem;
+            .item{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :host{
+        .container-card{
+            .image{
+                width: 100%;
+                min-width: auto;
+                max-width: auto;
+                margin-right: 0;
+            }
+        }
+    }
+ }

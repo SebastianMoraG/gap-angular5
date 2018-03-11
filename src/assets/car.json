@@ -1,0 +1,49 @@
+{
+  "data": [{
+      "id": 1,
+      "foto": "http://noticiasdeasopartes.com/wp-content/uploads/2017/10/lujo.jpg",
+      "modelo": "hk250",
+      "ano": "2018",
+      "marca": "mazda",
+      "precio": "35000000"
+    },
+    {
+      "id": 2,
+      "foto": "http://complotmagazine.com/wp-content/uploads/2016/03/BugattiChiron-1200x8011-1200x700.jpg",
+      "modelo": "fz300",
+      "ano": "2016",
+      "marca": "susuki",
+      "precio": "23000000"
+    }, {
+      "id": 3,
+      "foto": "http://images.e-konomista.pt/repo/mclaren-mp4.jpg",
+      "modelo": "thc234",
+      "ano": "2018",
+      "marca": "susuki",
+      "precio": "123400000"
+    },
+    {
+      "id": 4,
+      "foto": "http://complotmagazine.com/wp-content/uploads/2016/03/BugattiChiron-1200x8011-1200x700.jpg",
+      "modelo": "gap250",
+      "ano": "2018",
+      "marca": "BMW",
+      "precio": "250000000"
+    }, {
+      "id": 5,
+      "foto": "http://quesignifica.tv/wp-content/uploads/2016/10/so%C3%B1ar-con-carros_opt-compressor-1.jpg",
+      "modelo": "casio24",
+      "ano": "2018",
+      "marca": "Ferrari",
+      "precio": "247389634"
+    },
+    {
+      "id": 6,
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqNZ--8GQ0KXU4Iic2gSPC_BI1SozJUP1V67lCwAnrnkmTbHu",
+      "modelo": "Rz480",
+      "ano": "2015",
+      "marca": "BMW",
+      "precio": "125600000"
+    }
+  ]
+}

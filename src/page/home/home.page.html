@@ -1,0 +1,24 @@
+<div class="container">
+	<div class="comapre-button" *ngIf="isButtonCompareShowed">
+		<button (click)="compareCars()">Comparar</button>
+	</div>
+	<div class="banner">
+		<img src="./assets/banner.jpg" alt="Catalogo carros">
+	</div>
+	<div class="searcher">
+		<search-bar (change)="wordToSearch = $event"></search-bar>
+	</div>
+	<div class="container-list">
+		<div class="container-card" *ngFor="let car of listCars | filterByKey:wordToSearch">
+			<car-card  [car]="car" (click)="goToDetail(car.id)"></car-card>
+			<div class="action-compare">
+				<input 
+				type="checkbox" 
+				id="{{'check' + car.id}}" 
+				(change)="selectToCompare($event,car.id)"
+				[disabled]="inputCompareIsDisabled(car.id)"> 
+				<label for="{{'check' + car.id}}"> Seleccionar para comparar</label>
+			</div>
+		</div>
+	</div>
+</div>

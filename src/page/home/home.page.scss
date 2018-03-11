@@ -1,0 +1,68 @@
+:host{
+    .container{
+        .comapre-button{
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            button{
+                background: green;
+                color: white;
+                border: 0;
+                border-radius: .5rem;
+                padding: 1rem 2rem;
+                font-size: 2rem;
+            }
+        }
+        .banner{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .searcher{
+            padding: 2rem;
+        }
+        .container-list{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2rem;
+            padding-bottom: 5rem;
+            .container-card{
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+                width: 25%;
+                flex-grow: 1;
+                margin: 2rem 2.5rem;
+                min-width: 30rem;
+                car-card{
+                    display: block;
+                    flex-grow: 1;
+                }
+                .action-compare{
+                    font-size: 1.5rem;
+                    width: 100%;
+                    padding-left: 1.5rem;
+                    margin-bottom: 2rem;
+                    display: flex;
+                    align-items: center;
+                    input{
+                        width: 15px;
+                        height: 15px;
+                        margin-right: 1rem;
+                    }
+                    input:disabled, input:disabled ~ label{
+                        opacity: 0.3;
+                        cursor: not-allowed;
+                    }
+                    input, label{
+                        cursor: pointer;
+                    }
+                    label{
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }
+    }
+}

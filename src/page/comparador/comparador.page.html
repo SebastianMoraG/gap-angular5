@@ -1,0 +1,10 @@
+<div class="back">
+    <a [routerLink]="'/home'">Ir a catalogo de Carros</a>
+</div>
+<div class="container" *ngIf="car1 && car2">
+    <car-card [car]="car1"></car-card>
+    <div class="container-text">
+        <div class="text">VS</div>
+    </div>
+    <car-card [car]="car2"></car-card>
+</div>

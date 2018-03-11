@@ -1,0 +1,16 @@
+<div class="container-card">
+  <div class="image">
+    <img [src]="car.foto">
+  </div>
+  <div class="info-car">
+    <div class="item">
+      <span>Modelo: </span>{{car.modelo}}</div>
+    <div class="item">
+      <span>Año: </span>{{car.ano}}</div>
+    <div class="item">
+      <span>Marca: </span>{{car.marca}}</div>
+    <div class="item">
+      <span>precio: </span>{{car.precio | currency: 'COP'}}</div>
+  </div>
+
+</div>

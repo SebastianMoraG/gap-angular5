@@ -1,0 +1,23 @@
+@mixin newFont($font,$fontFamily, $fileName){
+    $path: 'fonts/'+ $font + '/' + $fontFamily+ '/'+ $fileName;
+
+    @font-face {
+        font-family: $fileName;
+        src: url($path + '.eot');
+        src: url($path +'.eot?#iefix') format('embedded-opentype'),
+             url($path +'.woff2') format('woff2'),
+             url($path +'.woff') format('woff'),
+             url($path +'.ttf') format('truetype'),
+             url($path +'.svg#'+$fontFamily) format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+@include newFont('Lato','lato-BlackItalic','Lato-BlackItalic');
+@include newFont('Lato','lato-Black','Lato-Black');
+@include newFont('Lato','lato-Bold','Lato-Bold');
+@include newFont('Lato','lato-Italic','Lato-Italic');
+@include newFont('Lato','lato-Light','Lato-Light');
+@include newFont('Lato','lato-Regular','Lato-Regular');
+@include newFont('Lato','lato-Semibold','Lato-Semibold');
